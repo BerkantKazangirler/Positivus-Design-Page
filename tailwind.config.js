@@ -13,6 +13,7 @@ export default {
         '100': '30rem',
         '101': '32rem',
         '128': '40rem',
+        '140': '45rem',
         '256': '56rem',
       },
       colors: {
