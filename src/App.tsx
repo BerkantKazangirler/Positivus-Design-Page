@@ -507,14 +507,14 @@ function App() {
               <input type="radio" name="sayhi" id="contact" className="ml-3" />
               <span>Get a Quote</span>
             </div>
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-5 md:w-full">
               <label htmlFor="name" className="text-sm">
                 Name
               </label>
               <input
                 type="text"
                 id="name"
-                className="border border-black rounded-xl p-4 md:w-101 w-96 mt-2"
+                className="border border-black rounded-xl p-4 md:w-101 w-max mt-2"
                 placeholder="Name"
               />
               <label htmlFor="email" className="text-sm mt-5">
@@ -523,7 +523,7 @@ function App() {
               <input
                 type="text"
                 id="email"
-                className="border border-black rounded-xl p-4 md:w-101 w-96 mt-2"
+                className="border border-black rounded-xl p-4 md:w-101 w-max mt-2"
                 placeholder="Email"
               />
               <label htmlFor="message" className="text-sm mt-5">
@@ -533,9 +533,9 @@ function App() {
                 name="message"
                 id="message"
                 placeholder="Message"
-                className="border border-black rounded-xl p-4 md:w-101 w-96 h-28 mt-2"
+                className="border border-black rounded-xl p-4 md:w-101 w-max h-28 mt-2"
               ></textarea>
-              <button className="md:w-101 w-96 bg-main-gray text-white mt-10 px-10 py-5 rounded-xl">
+              <button className="md:w-101 w-max mx-auto md:mx-0 bg-main-gray text-white mt-10 px-10 py-5 rounded-xl">
                 Send Message
               </button>
             </div>
