@@ -6,10 +6,10 @@ import {
   Menus,
   Contact,
   Testimonials,
+  Footer,
 } from "./components";
-import Footer from "./components/footer/footer";
-import Sponsors from "./components/header/sponsors/sponsors";
 import Case from "./components/casestudies/casestudies";
+import Sponsors from "./components/header/sponsors/sponsors";
 import Team from "./components/team/team";
 
 function App() {
@@ -20,16 +20,16 @@ function App() {
         <Header />
         <Sponsors />
         <Heading
-          children="Services"
-          text="At our digital marketing agency, we offer a range of services to help
+          title="Services"
+          description="At our digital marketing agency, we offer a range of services to help
         businesses grow and succeed online. These services include:"
         />
-        <div className="flex flex-col mt-10 gap-10">
+        <div className="flex flex-col gap-10">
           <Services />
         </div>
         <Heading
-          children="Case Studies"
-          text="Explore Real-Life Examples of Our Proven Digital Marketing Success
+          title="Case Studies"
+          description="Explore Real-Life Examples of Our Proven Digital Marketing Success
             through Our Case Studies"
         />
         <Case
@@ -44,29 +44,29 @@ function App() {
             increase in online sales."
         />
         <Heading
-          children="Our Working Process"
-          text="Step-by-Step Guide to Achieving Your Business Goals"
+          title="Our Working Process"
+          description="Step-by-Step Guide to Achieving Your Business Goals"
         />
         <Menus />
         <Heading
-          children="Team"
-          text="Meet the skilled and experienced team behind our successful digital
+          title="Team"
+          description="Meet the skilled and experienced team behind our successful digital
             marketing strategies"
         />
         <Team />
         <Heading
-          children="Testimonials"
-          text="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+          title="Testimonials"
+          description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
             about Our Digital Marketing Services"
         />
         <Testimonials />
 
         <Heading
-          children="Contact Us"
-          text="Connect with Us: Let's Discuss Your Digital Marketing Needs"
+          title="Contact Us"
+          description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
         />
         <Contact />
-        <Footer />
+        <Footer.Footer />
       </div>
     </>
   );

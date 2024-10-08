@@ -6,3 +6,4 @@ export { Menus as Menus } from "./menus";
 export { CaseStduies as CaseStduies } from "./casestudies";
 export { Contact as Contact } from "./contact";
 export { Testimonials as Testimonials } from "./testimonials";
+export * as Footer from "./footer";

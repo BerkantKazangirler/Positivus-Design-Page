@@ -2,7 +2,7 @@ import { useState } from "react";
 import cn from "classnames";
 
 function Menus() {
-  const [test, setTest] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const veriler = [
     {
@@ -41,12 +41,14 @@ function Menus() {
       <div>
         {veriler.map((item, index) => (
           <div
+            key={item.id}
+            onClick={() => setActiveIndex(index + 1)}
             id={item.id.toString()}
             className={cn(
               "flex flex-col mt-10 px-12 py-10 rounded-[35px] border-2 border-black shadow-lg shadow-black",
               {
-                "bg-main-green": test == item.id,
-                "bg-main-white": test != item.id,
+                "bg-main-green": activeIndex == item.id,
+                "bg-main-white": activeIndex != item.id,
               }
             )}
           >
@@ -58,13 +60,13 @@ function Menus() {
                 </span>
               </div>
               <button
-                className="p-3 px-6 rounded-full bg-button-inactive font-bold border-2 text-2xl border-black"
-                onClick={() => setTest(Number(index + 1))}
+                className="p-3 px-6 rounded-full bg-button-inactive font-bold border-2 text-2xl border-black hidden md:block"
+                onClick={() => setActiveIndex(index + 1)}
               >
-                {(test == item.id && <span>-</span>) || <span>+</span>}
+                {(activeIndex == item.id && <span>-</span>) || <span>+</span>}
               </button>
             </div>
-            {test == item.id && (
+            {activeIndex == item.id && (
               <>
                 <hr className="border-black/40 mt-5" />
                 <p className="mt-5 text-xl">{item.sub}</p>
