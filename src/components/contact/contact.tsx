@@ -4,10 +4,10 @@ function Contact() {
       <div className="bg-main-white px-8 md:px-16 py-10 mt-10 flex flex-row rounded-2xl mx-auto md:mx-0">
         <div className="flex flex-col w-full">
           <div className="flex flex-row gap-2">
-            <input type="radio" name="sayhi" id="contact" />
-            <span>Say Hi</span>
-            <input type="radio" name="sayhi" id="contact" className="ml-3" />
-            <span>Get a Quote</span>
+            <input type="radio" name="sayhi" id="sayhi" />
+            <label htmlFor="sayhi">Say Hi</label>
+            <input type="radio" name="sayhi" id="quote" className="ml-3" />
+            <label htmlFor="quote">Get a Quote</label>
           </div>
           <div className="flex flex-col mt-5 md:w-full">
             <label htmlFor="name" className="text-sm">

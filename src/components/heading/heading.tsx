@@ -1,17 +1,17 @@
 import Subheading from "./subheading/subheading";
 
 interface props {
-  text: string;
-  children: string;
+  title: string;
+  description: string;
 }
 
-function Heading({ children, text }: props) {
+function Heading({ title, description }: props) {
   return (
     <div className="flex flex-col mt-32 gap-5 md:flex-row">
       <span className="bg-main-green w-fit text-3xl font-semibold p-2 rounded relative mx-auto md:mx-0">
-        {children}
+        {title}
       </span>
-      <Subheading text={text} />
+      <Subheading text={description} />
     </div>
   );
 }

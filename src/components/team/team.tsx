@@ -39,7 +39,7 @@ function Team() {
   ];
   return (
     <>
-      <div className="grid grid-cols-3 flex-col mt-20 gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-3 flex-col mt-20 gap-14">
         {veriler.map((item) => (
           <div className="flex flex-col gap-14 w-fit justify-center md:flex-row md:w-auto mx-auto md:mx-0">
             <div className="border border-black rounded-3xl flex flex-col px-7 py-5 gap-5">
