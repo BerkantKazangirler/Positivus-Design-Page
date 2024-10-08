@@ -20,6 +20,8 @@ export default {
         'main-green' : '#B9FF66',
         'main-gray' : '#191A23',
         'main-white' : '#F3F3F3',
+        'footer-bg': '#292A32',
+        'button-inactive': '#F3F3F3',
       },
       container: {
         screens: {
